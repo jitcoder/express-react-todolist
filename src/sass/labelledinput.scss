@@ -1,0 +1,25 @@
+@import 'mixins/input';
+@import 'colors';
+
+.labelledinput{
+    clear:left;
+    display:block;
+    margin:10px;
+    
+    label{
+        font-family:verdana;
+        font-size:14px;
+        display:inline-block;
+        width:100px;
+        padding-right:15px;
+    }
+
+    input{
+      @include inputbox;
+    }
+    
+    input:focus{
+      @include inputbox-focused;
+    }
+    
+}

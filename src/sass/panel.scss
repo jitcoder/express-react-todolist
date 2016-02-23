@@ -1,0 +1,9 @@
+@import 'colors';
+
+.panel{
+  border:1px solid lighten($grey, 15%);
+  background-color:lighten($grey, 25%);
+  width:300px;
+  overflow:hidden;
+  padding:5px;
+}

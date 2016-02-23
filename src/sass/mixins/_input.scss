@@ -1,0 +1,23 @@
+@mixin inputbox{
+  outline:none;
+  font-size:12px;
+  font-family:verdana;
+  border-radius:3px;
+  border: solid 1px gainsboro;
+  -webkit-transition: box-shadow 0.3s, border 0.3s;
+  -moz-transition: box-shadow 0.3s, border 0.3s;
+  -o-transition: box-shadow 0.3s, border 0.3s;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+
+@mixin inputbox-focused{
+  outline:none;
+  font-size:12px;
+  font-family:verdana;
+  border-radius:3px;
+  
+  border: solid 1px $highlight;
+  -webkit-box-shadow: 0 0 5px 1px $highlight;
+  -moz-box-shadow: 0 0 5px 1px $highlight;
+  box-shadow: 0 0 5px 1px $highlight;
+}
